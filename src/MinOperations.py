@@ -1,6 +1,5 @@
 import math
 
-
 def min_operations( n: int) -> int:
     if n == pow(2, int(math.log2(n))):
         return 1
