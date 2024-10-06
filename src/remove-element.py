@@ -1,4 +1,3 @@
-# 2 pointer
 # def remove_element(nums, val) -> int:
 #     r = len(nums) - 1
 #     l = 0
@@ -16,6 +15,10 @@
 #         l += 1
 #     return len(nums) - counter
 
+#Two pointer
+#TC: O(N) Only iterator through the list of nums
+#SC: O(1) Not using any extra space
+
 def remove_element(nums, val) -> int:
     counter = 0
     for i in range(len(nums)):
@@ -24,8 +27,11 @@ def remove_element(nums, val) -> int:
             counter += 1
     return counter
 
+#Brute force
+#TC: O(N) Only iterator through the list of nums
+#SC: O(1) Counter variable to store data
 
-# print(remove_element([3, 2, 2, 3], 3))
-# print(remove_element([0, 1, 2, 2, 3, 0, 4, 2], 2))
+print(remove_element([3, 2, 2, 3], 3))
+print(remove_element([0, 1, 2, 2, 3, 0, 4, 2], 2))
 print(remove_element([1], 1))
 print(remove_element([0, 4, 4, 0, 4, 4, 4, 0, 2], 4))

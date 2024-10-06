@@ -15,5 +15,7 @@ def pascal_triangle(num_rows: int):
         result.append(row)
     return result
 
-
+#Brute force
+#TC: O(N^2) Nested loop
+#SC: O(N^2) Matrix n x m
 print(pascal_triangle(5))
